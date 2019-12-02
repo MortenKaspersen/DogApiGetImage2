@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
     private ArrayList<Dog> dogs;
     private int size;
     ProgressDialog pd;
-    String FinalImageURL = "https:\\/\\/images.dog.ceo\\/breeds\\/poodle-miniature\\/n02113712_10433.jpg";
+    String FinalImageURL;
 
 
     @Override
@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
                 //String dog = FinalImageURL;
                 //Picasso.get().load(dog).into(mImageView);
 
-                Toast.makeText(MainActivity.this,"" + dog,Toast.LENGTH_SHORT).show();
+                //Toast.makeText(MainActivity.this,"" + dog,Toast.LENGTH_SHORT).show();
                 //Picasso.get().load(String.valueOf(dog)).into(mImageView);
 
             }
@@ -165,7 +165,7 @@ public class MainActivity extends AppCompatActivity {
 
             Picasso.get().load(imageURL).into(mImageView);
 
-            //Toast.makeText(MainActivity.this,"" + imageURL,Toast.LENGTH_SHORT).show();
+            Toast.makeText(MainActivity.this,"" + imageURL,Toast.LENGTH_SHORT).show();
         }
     }
 
